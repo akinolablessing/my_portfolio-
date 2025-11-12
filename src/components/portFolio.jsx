@@ -214,7 +214,7 @@ function PortFolio() {
                         View Live Deployment
                     </a>
                     <a
-                        href="https://lnkd.in/dGpiWuwx"
+                        href="https://errand-tribe-backend-6.onrender.com/docs/swagger/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={style.auctionStyle}
