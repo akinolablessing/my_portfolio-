@@ -276,22 +276,24 @@ function PortFolio() {
                 </a>
                     </div>
                 <div className={style.projectCard}>
-                    <h2 className={style.projectSubtitle}>Pizza Ordering System</h2>
-                    <h3 className={style.projectSubtitle}>Project:Pizza Ordering App Front-End</h3>
+                    <h2 className={style.projectSubtitle}>El Olam</h2>
+                    <h3 className={style.projectSubtitle}>Project:Mobile App for Educational Management System</h3>
                     <p className={style.projectDescription}>
 
-                        Developed a user-friendly pizza ordering application using React.
-                        Users can browse a pizza menu, customize orders, add items to the cart, and place orders.
-                        Implemented state management for cart functionality and interactive UI components for a seamless experience. </p>
+                        Designed and developed the frontend for <strong>El Olam</strong>, a mobile application that streamlines
+                        student admission, result checking, and academic record management. Built with React and optimized
+                        for mobile responsiveness, the app provides an intuitive, fast, and user-friendly experience for both
+                        students and administrators. It integrates seamlessly with backend APIs for real-time data access,
+                        secure authentication, and efficient workflow management. </p>
                     <h4 className={style.projectSubtitle}>Key Technologies:</h4>
-                    <p className={style.techStack}>   React.js, JavaScript, CSS (optional: React Router, useState/useContext, or localStorage)</p>
+                    <p className={style.techStack}> React.js, Tailwind CSS, React Router, Axios, Vite, Git, Netlify (Deployment)</p>
                     <a
-                        href="https://github.com/akinolablessing/react_repo/tree/main/PizzaJoint"
+                        href="https://el-olam-repository.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={style.auctionStyle}
                     >
-                        View on GitHub
+                        View Live Deployment
                     </a>
                 </div>
                 </div>
