@@ -1,6 +1,6 @@
 import style from "./portFolio.module.css";
 import { motion } from "framer-motion";
-import myPicture from "../assets/WhatsApp Image 2025-06-09 at 14.18.54_0806923e.jpg"
+import myPicture from "../assets/photo_2025-11-11_09-22-18.jpg"
 import javaImage from "../assets/WhatsApp Image 2025-05-21 at 20.27.13_e66af4e7.jpg"
 import reactImage from "../assets/WhatsApp Image 2025-05-24 at 08.28.09_ca38609d.jpg"
 import javaLogo from "../assets/download__1_-removebg-preview.png"
@@ -10,6 +10,7 @@ import goLang from "../assets/download__1_-removebg-preview (2).png"
 import react from "../assets/download-removebg-preview (2).png"
 import html from "../assets/download-removebg-preview (3).png"
 import css from "../assets/download-removebg-preview (4).png"
+
 import flutter from "../assets/download-removebg-preview (5).png"
 import django from "../assets/download.jpeg"
 import designThinking from "../assets/download (1).jpeg"
