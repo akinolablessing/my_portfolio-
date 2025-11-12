@@ -192,25 +192,26 @@ function PortFolio() {
             <div className={style.projectsContainer}>
 
                 <div className={style.projectCard}>
-                    <h2 className={style.projectSubtitle}> Auction System.</h2>
-                    <h3 className={style.projectSubtitle}>Project: Backend for an Online Auction Platform</h3>
+                    <h2 className={style.projectSubtitle}> Errand Tribe.</h2>
+                    <h3 className={style.projectSubtitle}>Project: Back-End Errand Management Platform</h3>
                     <p className={style.projectDescription}>
-                        Developed a scalable Java-based backend for an online auction platform,
-                        featuring user registration, auction listings, real-time bidding,
-                        and secure transaction processing. Implemented using Spring Boot with
-                        a layered architecture and MongoDB for data persistence. Emphasized test-driven development,
-                        modular design, and agile practices to ensure maintainability and scalability.</p>
+                        Developed the backend for <strong>ErrandTribe</strong>, a web-based platform that connects users
+                        with reliable service providers to handle errands and deliveries efficiently. Implemented key
+                        features including user registration and authentication, task creation and tracking, and secure
+                        data management. The system was designed using a modular architecture in Django to ensure scalability,
+                        maintainability, and smooth integration with potential frontend services.</p>
 
                     <h4 className={style.projectSubtitle}>Key Technologies:</h4>
-                        <p className={style.techStack}>Java, Spring Boot (REST APIs), Spring Data MongoDB, MongoDB, Maven, JUnit, Agile Development</p>
+                        <p className={style.techStack}>  Python, Django, PostgreSQL, JWT Authentication, RESTful APIs, Postman, Git, Agile Development
+                        </p>
 
                     <a
-                        href="https://github.com/akinolablessing/auction_app_system"
+                        href="https://lnkd.in/deA9wmQw"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={style.auctionStyle}
                     >
-                        View on GitHub
+                        View Live Deployment
                     </a>
                     </div>
                 <div className={style.projectCard}>
