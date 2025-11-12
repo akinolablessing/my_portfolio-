@@ -213,6 +213,14 @@ function PortFolio() {
                     >
                         View Live Deployment
                     </a>
+                    <a
+                        href="https://lnkd.in/dGpiWuwx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={style.auctionStyle}
+                    >
+                        Swagger Documentation
+                    </a>
                     </div>
                 <div className={style.projectCard}>
                     <h2 className={style.projectSubtitle}>Banking System</h2>
