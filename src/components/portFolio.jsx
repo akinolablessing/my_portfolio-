@@ -2,6 +2,7 @@ import style from "./portFolio.module.css";
 import { motion } from "framer-motion";
 import myPicture from "../assets/photo_2025-11-11_09-22-18.jpg"
 import img2 from "../assets/mySecondImage.jpg"
+import img3 from "../assets/image3.jpg"
 
 import javaImage from "../assets/WhatsApp Image 2025-05-21 at 20.27.13_e66af4e7.jpg"
 import reactImage from "../assets/WhatsApp Image 2025-05-24 at 08.28.09_ca38609d.jpg"
@@ -34,7 +35,7 @@ import emailjs from "emailjs-com";
 
 function PortFolio() {
 
-    const images = [myPicture, img2];
+    const images = [myPicture, img2, img3];
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
