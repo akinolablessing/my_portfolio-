@@ -70,57 +70,57 @@ body{
 }
 
 /* Button styles */
-/*.cvButton {*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    font-weight: bold;*/
-/*    padding: 10px 16px;*/
-/*    border-bottom: 2px solid transparent;*/
-/*    transition: all 0.3s ease;*/
-/*}*/
-/*.cvButton {*/
-/*    display: inline-block;        !* 🔑 makes border work properly *!*/
-/*    padding: 8px 14px;*/
-/*    color: ghostwhite;*/
-/*    text-decoration: none;        !* remove default underline *!*/
-/*    font-size: 18px;*/
-/*    cursor: pointer;*/
-/*    transition: color 0.3s ease, border-bottom 0.3s ease;*/
-/*}*/
-
-/*!*.cvButton:hover {*!*/
-/*!*    color: #00ff99;*!*/
-/*!*    border-bottom: 2px solid #00ff99;*!*/
-/*!*}*!*/
+.cvButton {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.cvButton {
+    display: inline-block;        /* 🔑 makes border work properly */
+    padding: 8px 14px;
+    color: ghostwhite;
+    text-decoration: none;        /* remove default underline */
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
 
 /*.cvButton:hover {*/
-/*    border-bottom: 2px solid #00ff99;*/
 /*    color: #00ff99;*/
+/*    border-bottom: 2px solid #00ff99;*/
 /*}*/
 
-
-.cvButton {
-    position: relative;
-}
-
-.cvButton::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background: #00ff99;
-    transition: width 0.3s ease;
-}
-
 .cvButton:hover {
+    border-bottom: 2px solid #00ff99;
     color: #00ff99;
 }
 
-.cvButton:hover::after {
-    width: 100%;
-}
+
+/*.cvButton {*/
+/*    position: relative;*/
+/*}*/
+
+/*.cvButton::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: -2px;*/
+/*    width: 0;*/
+/*    height: 2px;*/
+/*    background: #00ff99;*/
+/*    transition: width 0.3s ease;*/
+/*}*/
+
+/*.cvButton:hover {*/
+/*    color: #00ff99;*/
+/*}*/
+
+/*.cvButton:hover::after {*/
+/*    width: 100%;*/
+/*}*/
 
 
 .pages{
