@@ -62,26 +62,23 @@ function PortFolio() {
 
 
     const text = "Akinyemi Ayomide";
-    const [displayedText, setDisplayedText] = useState("");
-    const indexRef = useRef(0);
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        // 🔥 RESET on mount (important)
-        indexRef.current = 0;
-        setDisplayedText("");
-
         const interval = setInterval(() => {
-            if (indexRef.current >= text.length) {
-                clearInterval(interval);
-                return;
-            }
-
-            setDisplayedText((prev) => prev + text[indexRef.current]);
-            indexRef.current++;
+            setIndex((prev) => {
+                if (prev >= text.length) {
+                    clearInterval(interval);
+                    return prev;
+                }
+                return prev + 1;
+            });
         }, 120);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [text]);
+
+    const displayedText = text.slice(0, index);
     return (
         <>
             <motion.div
@@ -137,7 +134,7 @@ function PortFolio() {
             </motion.div>
             <div className={style.nameAndPicture}>
                 <div>
-                <h1 className={style.akinyemi}></h1>
+                <h1 className={style.akinyemi}>{displayedText}</h1>
                     <p className={style.software}>Software Engineer</p>
                     <motion.div
                         initial={{ opacity: 0 }}
