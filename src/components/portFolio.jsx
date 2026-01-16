@@ -73,7 +73,7 @@ function PortFolio() {
                 }
                 return prev + 1;
             });
-        }, 100);
+        }, 80);
 
         return () => clearInterval(interval);
     }, [text]);
