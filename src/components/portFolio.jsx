@@ -137,7 +137,7 @@ function PortFolio() {
             </motion.div>
             <div className={style.nameAndPicture}>
                 <div>
-                <h1 className={style.akinyemi}>{displayedText}</h1>
+                <h1 className={style.akinyemi}></h1>
                     <p className={style.software}>Software Engineer</p>
                     <motion.div
                         initial={{ opacity: 0 }}
