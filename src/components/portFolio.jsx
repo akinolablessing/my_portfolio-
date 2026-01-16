@@ -21,7 +21,7 @@ import flask from "../assets/download (2).png"
 import mySql from "../assets/download (3).png"
 import mongoDb from "../assets/download (4).png"
 import move from "../assets/images.jpeg"
-import { useState } from "react";
+import {useEffect, useState} from "react";
 // import { FaFilePdf, FaTimes } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -59,6 +59,25 @@ function PortFolio() {
                 setStatus("Failed to send message. Try again later.");
             });
     };
+
+    const text = "Akinyemi Ayomide";
+    const [displayedText, setDisplayedText] = useState("");
+
+    useEffect(() => {
+        let index = 0;
+
+        const interval = setInterval(() => {
+            setDisplayedText((prev) => prev + text[index]);
+            index++;
+
+            if (index === text.length) {
+                clearInterval(interval);
+            }
+        }, 120); // typing speed
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <>
             <motion.div
@@ -114,7 +133,7 @@ function PortFolio() {
             </motion.div>
             <div className={style.nameAndPicture}>
                 <div>
-                <h1 className={style.akinyemi}>Akinyemi Ayomide</h1>
+                <h1 className={style.akinyemi}>{displayedText}</h1>
                     <p className={style.software}>Software Engineer</p>
                     <motion.div
                         initial={{ opacity: 0 }}

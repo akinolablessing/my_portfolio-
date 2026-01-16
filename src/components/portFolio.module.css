@@ -108,6 +108,19 @@ border-radius: 4rem;
     text-shadow: 3px 3px #2c5364;
 
 }
+
+.akinyemi::after {
+    content: "|";
+    margin-left: 4px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .akinyemiDiv{
     font-weight: initial;
     margin-left: 170px;
