@@ -82,7 +82,7 @@ function PortFolio() {
                         aria-label="Toggle menu"
                     >
                         {open ? <FaTimes /> : <FaBars />}
-                    </button>
+
 
                     {/* Buttons */}
                     <div className={`${style.pages} ${open ? style.show : style.hide}`}>
@@ -99,6 +99,7 @@ function PortFolio() {
                             GitHub
                         </a>
                     </div>
+                    </button>
                 </div>
                 {/*<hr></hr>*/}
                 <div>
