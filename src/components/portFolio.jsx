@@ -1,6 +1,8 @@
 import style from "./portFolio.module.css";
 import { motion } from "framer-motion";
 import myPicture from "../assets/photo_2025-11-11_09-22-18.jpg"
+import img2 from "../assets/mySecondImage.jpg"
+
 import javaImage from "../assets/WhatsApp Image 2025-05-21 at 20.27.13_e66af4e7.jpg"
 import reactImage from "../assets/WhatsApp Image 2025-05-24 at 08.28.09_ca38609d.jpg"
 import javaLogo from "../assets/download__1_-removebg-preview.png"
@@ -31,6 +33,20 @@ import emailjs from "emailjs-com";
 // import {Link} from "react-router-dom";
 
 function PortFolio() {
+
+    const images = [myPicture, img2];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % images.length);
+        }, 3000); // change every 3 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
+
 
     const [open, setOpen] = useState(false);
 
@@ -146,7 +162,12 @@ function PortFolio() {
                 </div>
 
 
-            <img className={style.semiImage} src={myPicture} alt="semicolon picture"></img>
+            {/*<img className={style.semiImage} src={myPicture} alt="semicolon picture"></img>*/}
+                <img
+                    className={style.semiImage}
+                    src={images[currentIndex]}
+                    alt="semicolon"
+                />
 
 
             </div>
