@@ -101,13 +101,13 @@ border-radius: 4rem;
     display: flex;
     justify-content: space-between;
 }
-.akinyemi{
+/*.akinyemi{*/
 
-    font-size: 80px;
-    color: ghostwhite;
-    text-shadow: 3px 3px #2c5364;
+/*    font-size: 80px;*/
+/*    color: ghostwhite;*/
+/*    text-shadow: 3px 3px #2c5364;*/
 
-}
+/*}*/
 
 .akinyemi::after {
     content: "|";
