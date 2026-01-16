@@ -46,6 +46,15 @@ function PortFolio() {
 
         return () => clearInterval(interval);
     }, []);
+    const intervalRef = useRef(null);
+
+    useEffect(() => {
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % images.length);
+        }, 3000);
+
+        return () => clearInterval(intervalRef.current);
+    }, []);
 
 
 
@@ -164,11 +173,23 @@ function PortFolio() {
 
 
             {/*<img className={style.semiImage} src={myPicture} alt="semicolon picture"></img>*/}
+            {/*    <img*/}
+            {/*        className={style.semiImage}*/}
+            {/*        src={images[currentIndex]}*/}
+            {/*        alt="semicolon"*/}
+            {/*    />*/}
+
                 <img
                     className={style.semiImage}
                     src={images[currentIndex]}
-                    alt="semicolon"
+                    onMouseEnter={() => clearInterval(intervalRef.current)}
+                    onMouseLeave={() =>
+                        intervalRef.current = setInterval(() => {
+                            setCurrentIndex((prev) => (prev + 1) % images.length);
+                        }, 3000)
+                    }
                 />
+
 
 
             </div>
