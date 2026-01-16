@@ -48,8 +48,12 @@ body{
     }
 
     .pages {
+        /*flex-direction: column;*/
+        /*margin-top: 15px;*/
+        display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        gap: 12px;
+        margin-top: 12px;
     }
 
     .hide {

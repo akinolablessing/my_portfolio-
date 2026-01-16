@@ -76,32 +76,36 @@ function PortFolio() {
                 {/*    </div>*/}
 
                     {/* Toggle icon */}
+                    {/*<button*/}
+                    {/*    className={style.menuToggle}*/}
+                    {/*    onClick={() => setOpen(!open)}*/}
+                    {/*    aria-label="Toggle menu"*/}
+                    {/*>*/}
+                    {/*    {open ? <FaTimes /> : <FaBars />}*/}
+                    {/*</button>*/}
                     <button
                         className={style.menuToggle}
                         onClick={() => setOpen(!open)}
-                        aria-label="Toggle menu"
                     >
                         {open ? <FaTimes /> : <FaBars />}
                     </button>
 
+
                     {/* Buttons */}
-                    {/* Menu items */}
-                    {open && (
-                        <div  className={`${style.pages} ${open ? style.show : style.hide}`}>
-                            <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target="_blank" rel="noopener">
-                                CV
-                            </a>
-                            <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target="_blank" rel="noopener">
-                                LinkedIn
-                            </a>
-                            <a className={style.cvButton} href="#">
-                                WhatsApp
-                            </a>
-                            <a className={style.cvButton} href="https://github.com/akinolablessing" target="_blank" rel="noopener">
-                                GitHub
-                            </a>
-                        </div>
-                    )}
+                    <div className={`${style.pages} ${open ? style.show : style.hide}`}>
+                        <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target="_blank" rel="noopener">
+                            CV
+                        </a>
+                        <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                        <a className={style.cvButton} href="#">
+                            WhatsApp
+                        </a>
+                        <a className={style.cvButton} href="https://github.com/akinolablessing" target="_blank" rel="noopener">
+                            GitHub
+                        </a>
+                    </div>
 
                 </div>
                 {/*<hr></hr>*/}
