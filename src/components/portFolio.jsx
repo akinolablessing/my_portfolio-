@@ -63,14 +63,13 @@ function PortFolio() {
 
     const text = "Akinyemi Ayomide";
     const [displayedText, setDisplayedText] = useState("");
+    const indexRef = useRef(0);
 
     useEffect(() => {
-        let index = 0;
-
         const interval = setInterval(() => {
-            if (index < text.length) {
-                setDisplayedText((prev) => prev + text[index]);
-                index++;
+            if (indexRef.current < text.length) {
+                setDisplayedText((prev) => prev + text[indexRef.current]);
+                indexRef.current++;
             } else {
                 clearInterval(interval);
             }
@@ -78,7 +77,6 @@ function PortFolio() {
 
         return () => clearInterval(interval);
     }, []);
-
     return (
         <>
             <motion.div
