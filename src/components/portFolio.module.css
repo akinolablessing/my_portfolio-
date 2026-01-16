@@ -48,22 +48,8 @@ body{
 
 /* Buttons container */
 .pages {
-    /*display: flex;*/
-    /*gap: 20px;*/
-
-    position: absolute;
-    top: 60px;        /* below header */
-    right: 20px;
-
-    background: rgba(0, 0, 0, 0.8);
-    padding: 12px 16px;
-    border-radius: 8px;
-
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    z-index: 1000;
+    gap: 20px;
 }
 
 /* Mobile behaviour */
