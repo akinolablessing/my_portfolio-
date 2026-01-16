@@ -20,11 +20,62 @@ body{
 
 }
 
+/*.cvButton {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.menuToggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Buttons container */
+.pages {
+    display: flex;
+    gap: 20px;
+}
+
+/* Mobile behaviour */
+@media (max-width: 768px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .pages {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+}
+
+/* Button styles */
 .cvButton {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
 }
+
+.cvButton:hover {
+    border-bottom: 2px solid #00ff99;
+    color: #00ff99;
+}
+
 .pages{
     display: flex;
     justify-content: space-between;
