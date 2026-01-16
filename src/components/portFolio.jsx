@@ -66,13 +66,18 @@ function PortFolio() {
     const indexRef = useRef(0);
 
     useEffect(() => {
+        // 🔥 RESET on mount (important)
+        indexRef.current = 0;
+        setDisplayedText("");
+
         const interval = setInterval(() => {
-            if (indexRef.current < text.length) {
-                setDisplayedText((prev) => prev + text[indexRef.current]);
-                indexRef.current++;
-            } else {
+            if (indexRef.current >= text.length) {
                 clearInterval(interval);
+                return;
             }
+
+            setDisplayedText((prev) => prev + text[indexRef.current]);
+            indexRef.current++;
         }, 120);
 
         return () => clearInterval(interval);
