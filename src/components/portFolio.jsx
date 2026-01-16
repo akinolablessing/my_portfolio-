@@ -60,24 +60,34 @@ function PortFolio() {
             });
     };
 
+
     const text = "Akinyemi Ayomide";
     const [displayedText, setDisplayedText] = useState("");
 
+    // useEffect(() => {
+    //     let index = 0;
+    //
+    //     const interval = setInterval(() => {
+    //         setDisplayedText((prev) => prev + text[index]);
+    //         index++;
+    //
+    //         if (index === text.length) {
+    //             clearInterval(interval);
+    //         }
+    //     }, 120); // typing speed
+    //
+    //     return () => clearInterval(interval);
+    // }, []);
+
     useEffect(() => {
         let index = 0;
-
         const interval = setInterval(() => {
             setDisplayedText((prev) => prev + text[index]);
             index++;
-
-            if (index === text.length) {
-                clearInterval(interval);
-            }
-        }, 120); // typing speed
-
+            if (index === text.length) clearInterval(interval);
+        }, 120);
         return () => clearInterval(interval);
     }, []);
-
     return (
         <>
             <motion.div
