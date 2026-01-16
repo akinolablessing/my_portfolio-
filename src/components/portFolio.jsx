@@ -22,7 +22,9 @@ import mySql from "../assets/download (3).png"
 import mongoDb from "../assets/download (4).png"
 import move from "../assets/images.jpeg"
 import { useState } from "react";
-import { FaFilePdf, FaTimes } from "react-icons/fa";
+// import { FaFilePdf, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 
 import emailjs from "emailjs-com";
 
