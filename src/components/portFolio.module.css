@@ -70,14 +70,28 @@ body{
 }
 
 /* Button styles */
+/*.cvButton {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    padding: 10px 16px;*/
+/*    border-bottom: 2px solid transparent;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
 .cvButton {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 16px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
+    display: inline-block;        /* 🔑 makes border work properly */
+    padding: 8px 14px;
+    color: ghostwhite;
+    text-decoration: none;        /* remove default underline */
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
+/*.cvButton:hover {*/
+/*    color: #00ff99;*/
+/*    border-bottom: 2px solid #00ff99;*/
+/*}*/
 
 .cvButton:hover {
     border-bottom: 2px solid #00ff99;

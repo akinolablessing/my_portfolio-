@@ -88,12 +88,7 @@ function PortFolio() {
             >
                 <div className={style.headerContainer}>
                 <h1 className={style.textColor}>A.A</h1>
-                {/*    <div className={style.pages}>*/}
-                {/*<a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target={"_blank"} rel={"noopener"}>CV</a>*/}
-                {/*<a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target={"_blank"} rel={"noopener"}>Linkdin</a>*/}
-                {/*<a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>WhatsApp</a>*/}
-                {/*<a className={style.cvButton} href="https://github.com/akinolablessing" target={"_blank"} rel={"noopener"}>GitHub</a>*/}
-                {/*    </div>*/}
+
 
                     {/* Toggle icon */}
                     {/*<button*/}
