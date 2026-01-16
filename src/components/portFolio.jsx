@@ -22,11 +22,16 @@ import mySql from "../assets/download (3).png"
 import mongoDb from "../assets/download (4).png"
 import move from "../assets/images.jpeg"
 import { useState } from "react";
+import { FaFilePdf, FaTimes } from "react-icons/fa";
+
 import emailjs from "emailjs-com";
 
 // import {Link} from "react-router-dom";
 
 function PortFolio() {
+
+    const [open, setOpen] = useState(false);
+
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [status, setStatus] = useState("");
 
@@ -61,11 +66,36 @@ function PortFolio() {
             >
                 <div className={style.headerContainer}>
                 <h1 className={style.textColor}>A.A</h1>
-                    <div className={style.pages}>
-                <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target={"_blank"} rel={"noopener"}>CV</a>
-                <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target={"_blank"} rel={"noopener"}>Linkdin</a>
-                <a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>WhatsApp</a>
-                <a className={style.cvButton} href="https://github.com/akinolablessing" target={"_blank"} rel={"noopener"}>GitHub</a>
+                {/*    <div className={style.pages}>*/}
+                {/*<a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target={"_blank"} rel={"noopener"}>CV</a>*/}
+                {/*<a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target={"_blank"} rel={"noopener"}>Linkdin</a>*/}
+                {/*<a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>WhatsApp</a>*/}
+                {/*<a className={style.cvButton} href="https://github.com/akinolablessing" target={"_blank"} rel={"noopener"}>GitHub</a>*/}
+                {/*    </div>*/}
+
+                    {/* Toggle icon */}
+                    <button
+                        className={style.menuToggle}
+                        onClick={() => setOpen(!open)}
+                        aria-label="Toggle menu"
+                    >
+                        {open ? <FaTimes /> : <FaBars />}
+                    </button>
+
+                    {/* Buttons */}
+                    <div className={`${style.pages} ${open ? style.show : style.hide}`}>
+                        <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target="_blank" rel="noopener">
+                            CV
+                        </a>
+                        <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                        <a className={style.cvButton} href="#">
+                            WhatsApp
+                        </a>
+                        <a className={style.cvButton} href="https://github.com/akinolablessing" target="_blank" rel="noopener">
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 {/*<hr></hr>*/}
