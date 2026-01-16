@@ -87,7 +87,7 @@ function PortFolio() {
                     {/* Buttons */}
                     {/* Menu items */}
                     {open && (
-                        <div className={style.pages}>
+                        <div  className={`${style.pages} ${open ? style.show : style.hide}`}>
                             <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target="_blank" rel="noopener">
                                 CV
                             </a>
