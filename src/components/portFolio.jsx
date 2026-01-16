@@ -21,7 +21,7 @@ import flask from "../assets/download (2).png"
 import mySql from "../assets/download (3).png"
 import mongoDb from "../assets/download (4).png"
 import move from "../assets/images.jpeg"
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 // import { FaFilePdf, FaTimes } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
 
