@@ -69,7 +69,7 @@ function PortFolio() {
 
         const interval = setInterval(() => {
             if (index < text.length) {
-                setDisplayedText((prev) => prev + text[index]);
+                setDisplayedText((prev) => prev);
                 index++;
             } else {
                 clearInterval(interval);
