@@ -99,28 +99,6 @@ body{
 }
 
 
-/*.cvButton {*/
-/*    position: relative;*/
-/*}*/
-
-/*.cvButton::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    bottom: -2px;*/
-/*    width: 0;*/
-/*    height: 2px;*/
-/*    background: #00ff99;*/
-/*    transition: width 0.3s ease;*/
-/*}*/
-
-/*.cvButton:hover {*/
-/*    color: #00ff99;*/
-/*}*/
-
-/*.cvButton:hover::after {*/
-/*    width: 100%;*/
-/*}*/
 
 
 .pages{
