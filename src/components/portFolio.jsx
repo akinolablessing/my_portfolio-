@@ -77,7 +77,7 @@ function PortFolio() {
             }
 
             setDisplayedText((prev) => prev + text[indexRef.current]);
-            // indexRef.current++;
+            indexRef.current++;
         }, 120);
 
         return () => clearInterval(interval);
